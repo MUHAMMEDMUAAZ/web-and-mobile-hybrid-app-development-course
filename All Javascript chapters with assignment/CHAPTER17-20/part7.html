@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user=prompt("Welcome to ABC Bakery.What do you want to order sir/ma'ma::")
+        var coo = ["cake", "apple pie", "cookie", "chips", "patties"]   
+        var ava = "available"
+        var res=ava.bold();
+        for(var i=0;i<coo.length;i++){
+            if(user==coo[i]){
+            
+             document.write(user + " is "+res + " at index "+i+" in our bakery")
+             
+            }
+            
+            else{
+            document.write("We are sorry. "+user + " is not " +res+" in our bakery")
+            }
+            break;
+        
+        }
+        
+    </script>
+</body>
+</html>

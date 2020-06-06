@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamically Marks Sheet</h1>
+<table id="my">
+    <tr>
+        <th>Subject</th>
+        <th>Total Marks</th>
+        <th>Obatined Marks</th>
+        <th>Percentage</th>
+    </tr>
+    <tr>
+
+    </tr>
+</table>
+<script>
+var b =prompt("ENTER 1ST SUBJECT NAME:::")
+var c=+prompt("ENTER 1ST SUBJECT TOTAL MARKS ")
+var d =+prompt("ENTER 1ST SUBJECT OBATINED MARKS")
+
+var a = document.getElementById('my')
+var row = a.insertRow();
+var cell1 = row.insertCell();
+var cell2 = row.insertCell();
+var cell3 = row.insertCell();
+var cell4 = row.insertCell();
+cell1.innerHTML=b;
+cell2.innerHTML=c;
+cell3.innerHTML=d;
+var per_1=(d/c)*100;
+cell4.innerHTML=per_1+"%";
+
+
+var bb =prompt("ENTER 2ND SUBJECT NAME:::")
+var cc=+prompt("ENTER 2ND SUBJECT TOTAL MARKS ")
+var dd =+prompt("ENTER 2ND SUBJECT OBATINED MARKS")
+
+var aa = document.getElementById('my')
+var row_ = aa.insertRow();
+var cell11 = row_.insertCell();
+var cell22 = row_.insertCell();
+var cell33 = row_.insertCell();
+var cell44 = row_.insertCell();
+
+cell11.innerHTML=bb;
+cell22.innerHTML=cc;
+cell33.innerHTML=dd;
+var per_2=(dd/cc)*100;
+cell44.innerHTML=per_2 +"%";
+
+var bbb =prompt("ENTER 3RD SUBJECT NAME:::")
+var ccc=+prompt("ENTER 3RD SUBJECT TOTAL MARKS ")
+var ddd =+prompt("ENTER 3RD SUBJECT OBATINED MARKS")
+
+var aaa = document.getElementById('my')
+var row_a = a.insertRow();
+var cell111 = row_a.insertCell();
+var cell222 = row_a.insertCell();
+var cell333 = row_a.insertCell();
+
+var cell444 = row_a.insertCell();
+
+cell111.innerHTML=bbb;
+cell222.innerHTML=ccc;
+cell333.innerHTML=ddd;
+var per_3=(ddd/ccc)*100;
+cell444.innerHTML=per_3+"%";
+
+var tot = document.getElementById('my')
+var rows = a.insertRow();
+var cell1s = rows.insertCell();
+var cell2s = rows.insertCell();
+var cell3s = rows.insertCell();
+var cell4s= rows.insertCell();
+
+cell2s.innerHTML=("\r"+(c+cc+ccc));
+cell3s.innerHTML=(d+dd+ddd);
+cell4s.innerHTML=(per_1+per_2+per_3)+"%";
+
+
+
+
+</script>
+</body>
+</html>

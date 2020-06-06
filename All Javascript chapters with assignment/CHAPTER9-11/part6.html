@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Marks Sheet</h1>
+<script>
+var marks=+prompt("marks obtained in three subjects:::")
+var total = 300;
+
+var per=(marks/total)*100+"%";
+if(per>=80+"%"){
+     grade = "A-One"
+     remarks="Excellent" 
+}
+else if(per>=70+"%"){
+    grade="A"
+    remarks="Good" 
+}
+else if(per>=60+"%"){
+    grade="B"
+    remarks="You need to improve" 
+}
+else if(per<60+"%"){
+    grade="Fail"
+    remarks="Sorry" 
+}
+
+
+
+
+
+
+document.write("Total Marks:::"+total+"<br>")
+document.write("Marks Obtained:::"+marks+"<br>")
+document.write("Percentage:::"+per+"<br>")
+document.write("Grade :::"+grade+"<br>")
+document.write("Grade :::"+remarks)
+</script>
+</body>
+</html>

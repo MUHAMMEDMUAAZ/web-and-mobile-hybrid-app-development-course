@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+document.write("a is "+a+"<br>")
+document.write("b is "+b+"<br>")
+document.write("result is "+result+"<br>"+"<br>")
+document.write("..................................."+"<br>"+"<br>")
+document.write("Explain the output at each stage:"+"<br>")
+var c=2,d=1;
+var re=--a;
+--a - --b;
+--a - --b + ++b;
+--a - --b + ++b + b--;
+document.write("a is "+c+"<br>")
+document.write("b is "+d+"<br>")
+document.write("result is "+re)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="selectNumber">
+        <option>Choose a Phone Manufacturing</option>
+    </select>
+<script>
+    var select = document.getElementById("selectNumber");
+    var options = ["Apple","Samsung", "Motorola", "Nokia", "Sony" , "Haier"];
+    for(var i = 0; i < options.length; i++) {
+        var opt = options[i];
+        var el = document.createElement("option");
+        el.textContent = opt;
+        el.value = opt;
+        select.appendChild(el);
+}
+</script>
+</body>
+</html>

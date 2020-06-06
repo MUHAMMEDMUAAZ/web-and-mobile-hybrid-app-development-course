@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [24, 53, 78, 91, 12];
+        document.write("Array items: "+array+"<br>")
+        var small= array[0];
+
+        for (i=1; i<array.length;i++){
+            if (array[i] < small) {
+                    small = array[i];
+            }
+        }
+        
+
+
+
+document.write("The small number is "+small);
+    </script>
+</body>
+</html>
