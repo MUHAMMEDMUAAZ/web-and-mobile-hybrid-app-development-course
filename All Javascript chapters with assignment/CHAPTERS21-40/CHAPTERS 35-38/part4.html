@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cal(){
+            var user1=+prompt("Enter First Number : ")
+            var user2=+prompt("Enter Second Number : ")
+            var user3=prompt("Enter Operators (ADDED,SUBTRACTED,MULTIPLIED) : ")
+            if(user3=="+"){
+                alert( user1+user2);
+            }
+            else if(user3=="-"){
+                alert( user1-user2);
+            }
+            else if(user3=="*"){
+                alert( user1-user2);
+            }
+            else{
+                alert("sorry")
+            }
+        }
+        cal()
+    </script>
+</body>
+</html>

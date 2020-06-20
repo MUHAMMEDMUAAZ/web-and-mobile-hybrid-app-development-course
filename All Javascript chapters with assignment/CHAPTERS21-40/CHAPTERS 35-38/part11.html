@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function uppercase(str)
+        {
+        var array1 = str.split(' ');
+        var newarray1 = [];
+            
+        for(var x = 0; x < array1.length; x++){
+            newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+        }
+        return newarray1.join(' ');
+        }
+        document.write("EXAMPLE STRING : the quick brown fox"+"<br>")
+        document.write("EXPECTED OUTPUT : "+uppercase("the quick brown fox"));
+
+
+    </script>
+</body>
+</html>

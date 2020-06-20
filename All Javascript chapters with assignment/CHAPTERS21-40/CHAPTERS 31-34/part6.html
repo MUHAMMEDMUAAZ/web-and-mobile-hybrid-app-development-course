@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        document.write("Current Date : "+d+"<br>");
+        var oldGoodTimes = new Date(1970, 1, 1); // January = 0
+        var actualDate = new Date();
+        var mil=(actualDate.getTime() - oldGoodTimes.getTime())//millisecond
+        var min=mil/60000
+        document.write("Elapsed milliseconds since january : "+mil+"<br>")
+        document.write("Elapsed minutes since january : "+min)
+    </script>
+</body>
+</html>

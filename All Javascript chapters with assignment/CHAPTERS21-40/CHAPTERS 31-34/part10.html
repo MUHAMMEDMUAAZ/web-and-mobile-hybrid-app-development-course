@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date1 = new Date("01/1/2015"); 
+        var date2 = new Date(); 
+        
+        // To calculate the time difference of two dates 
+        var Difference_In_Time =  date2.getTime() - date1.getTime(); 
+        
+        // To calculate the no. of days between two dates 
+        var Difference_In_Days = Math.trunc( Difference_In_Time / (1000*3600)); 
+        
+        //To display the final no. of days (result) 
+        document.write("On reference date "+date2,"<br>"+Difference_In_Days +" second had passed since beginning of 2015");
+    </script>
+</body>
+</html>

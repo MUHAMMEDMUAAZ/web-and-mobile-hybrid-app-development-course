@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mess="The quick brown fox jumps over the lazy dog";
+        var is=(mess.toLocaleLowerCase().match(/the/g)).length;
+        document.write("Text : "+mess+"<br>")
+        document.write("There are "+is+" occurrence(s) of the word 'the '")
+    </script>
+</body>
+</html>

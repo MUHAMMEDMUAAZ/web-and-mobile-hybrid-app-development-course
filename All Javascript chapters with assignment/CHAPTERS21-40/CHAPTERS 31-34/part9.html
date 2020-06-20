@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date1 = new Date("06/18/2015"); 
+        var date2 = new Date("06/20/2020"); 
+        
+        // To calculate the time difference of two dates 
+        var Difference_In_Time = date2.getTime() - date1.getTime(); 
+        
+        // To calculate the no. of days between two dates 
+        var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
+        
+        //To display the final no. of days (result) 
+        document.write(Difference_In_Days+" days have passed since 1st Ramadan, 2015");
+    </script>
+</body>
+</html>

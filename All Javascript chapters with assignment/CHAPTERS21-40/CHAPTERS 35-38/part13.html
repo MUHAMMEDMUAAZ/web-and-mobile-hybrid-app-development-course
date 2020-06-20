@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function char_count(str, letter) 
+        {
+        var letter_Count = 0;
+        for (var position = 0; position < str.length; position++) 
+        {
+            if (str.charAt(position) == letter) 
+            {
+            letter_Count += 1;
+            }
+        }
+        return letter_Count;
+        }
+        document.write("Sample arguments : JSResourceS.com', 'o'"+"<br>")
+        document.write("Count :"+char_count('JSResourceS.com', 'o'));
+    </script>
+</body>
+</html>

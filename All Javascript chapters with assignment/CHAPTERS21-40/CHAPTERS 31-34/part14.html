@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>K-Electric Bill</h1>
+    <script>
+        var cn = "ABC Customer"
+        var bb =cn.bold();
+        var month="February"
+        var mm=month.bold();
+        var num=410;
+       
+        var chg=16;
+       
+        var net=num*chg;
+        var late =350;
+        var goss=net+late;
+       
+        document.write("Customer Name : "+bb+"<br>")
+        document.write("Month : "+mm+"<br>")
+        document.write("Number of units "+num+"<br>")
+        document.write("Charges per unit : "+chg+"<br>")
+        document.write("<br><br>")
+    
+        document.write("Net Amount Payable (within Due Date) : "+net+"<br>")
+        document.write("Late Payment Surcharge : "+late+"<br>");
+        document.write("Gross Amount Payable (after Due Date) : "+goss)
+    </script>
+</body>
+</html>

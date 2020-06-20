@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var regex = /^[A-Za-z0-9 ]+$/;
+ 
+        //Validate TextBox value against the Regex.
+        var isValid = regex.test(prompt("Enter Username"));
+        if (!isValid) {
+            alert("Please enter a valid username");
+        } else {
+            alert("Username is corrected");
+        }
+    </script>
+</body>
+</html>

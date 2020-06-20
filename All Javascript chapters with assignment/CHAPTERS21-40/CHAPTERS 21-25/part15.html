@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var passw=  /^[A-Za-z]\w{7,14}$/;
+        var user=prompt("Enter Password")
+        var us=passw.test(user)
+        
+        if(!us) 
+        { 
+            document.write("Enter Password : "+user+"<br>")
+           document.write("Password can not begin with a number Please enter a valid password")
+
+        }
+        else
+        { 
+            document.write("Enter Password : "+user+"<br>")
+            document.write("Password is corrected")
+        }
+        
+    </script>
+</body>
+</html>
