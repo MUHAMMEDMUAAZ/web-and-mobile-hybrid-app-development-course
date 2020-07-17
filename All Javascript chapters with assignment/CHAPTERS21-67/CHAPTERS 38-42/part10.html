@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CASHIER COUNTER</h1>
+    <script>
+        function notes(){
+            var amount=+prompt("Please input amount for withdraw : ")
+            document.write("Required notes of Rs. 100  : "+ Math.floor(amount/100)+"<br>" );
+            document.write("Required notes of Rs. 50   : "+ Math.floor((amount%100)/50)+"<br>");
+            document.write("Required notes of Rs. 10   : "+ Math.floor((((amount % 100) % 50) / 10))+"<br>");
+            document.write("Amount still remaining Rs. : "+ Math.floor((((amount % 100) % 50) % 10))+"<br>");
+            return 0
+      }
+      notes()
+    </script>
+</body>
+</html>

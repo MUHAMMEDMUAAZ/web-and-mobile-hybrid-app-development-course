@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function occur(chck){
+    var occurance=new Array();
+    for(var i=0; i < chck.length; i++ ){
+        var val=chck.slice(i,i+2);
+        switch(val){
+            case "ae":
+                occurance.unshift("ae");
+                break;
+            case "ai":
+                occurance.unshift("ai");
+                break;
+            case "ao":
+                occurance.unshift("ao");
+                break;
+            case "au":
+                occurance.unshift("au");
+                break;
+            case "aa":
+                occurance.unshift("aa");
+                break;
+            case "ea":
+                occurance.unshift("ea");
+                break;
+            case "ee":
+                occurance.unshift("ee");
+                break;
+            case "ei":
+                occurance.unshift("ei");
+                break;
+            case "eo":
+                occurance.unshift("eo");
+                break;
+            case "eu":
+                occurance.unshift("eu");
+                break;
+            case "ia":
+                occurance.unshift("ia");
+                break;
+            case "ie":
+                occurance.unshift("ie");
+                break;
+            case "ii":
+                occurance.unshift("ii");
+                break;
+            case "io":
+                occurance.unshift("io");
+                break;
+            case "iu":
+                occurance.unshift("iu");
+                break;
+            case "oa":
+                occurance.unshift("oa");
+                break;
+            case "oe":
+                occurance.unshift("oe");
+                break;
+            case "oi":
+                occurance.unshift("oi");
+                break;
+            case "oo":
+                occurance.unshift("oo");
+                break;
+            case "ou":
+                occurance.unshift("ou");
+                break;
+            case "ua":
+                occurance.unshift("ua");
+                break;
+            case "ue":
+                occurance.unshift("ue");
+                break;
+            case "ui":
+                occurance.unshift("ui");
+                break;
+            case "uo":
+                occurance.unshift("uo");
+                break;
+            case "uu":
+                occurance.unshift("uu");
+                break;
+            }
+    }
+    document.write("such occurance are " + occurance);
+}
+
+var para="Pleases read this application and give me gratuity";
+occur(para)
+    </script>
+</body>
+</html>

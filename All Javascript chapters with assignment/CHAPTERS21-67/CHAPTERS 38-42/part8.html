@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main(){
+            var user = +prompt("Enter the distance between Karachi and Lahore (in KM): ")
+           document.write("Meter "+met(user)+"<br>")
+           document.write("Feet "+fee(user)+"<br>")
+           document.write("Inches "+inc(user)+"<br>")
+           document.write("Centimeter "+cenn(user))
+
+        }
+       var met= function meter(ss){
+            return ss * 1000;
+        }
+        var fee = function feet(fe){
+            return fe*3280.84;
+        }
+        var inc= function inches(inc){
+            return inc * 39370.1;
+        }    
+        var cenn= function centimeter(cen){
+            return cen*100000;
+        }
+       main()
+        
+        </script>
+</body>
+</html>

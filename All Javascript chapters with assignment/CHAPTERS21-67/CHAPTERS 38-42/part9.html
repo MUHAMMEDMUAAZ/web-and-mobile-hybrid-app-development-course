@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function overtime(){
+                var user = +prompt("Enter the working hours of employee ")
+                if(user>40){
+                    var overt=user-40;
+                    var over_time_pay = overt * 12.00;
+                    alert("Employee Overtime pay is "+ over_time_pay)
+                }
+                else{
+                    alert("employees do not work for fractional part of an hour")
+                }
+            }
+            overtime()
+    </script>
+</body>
+</html>

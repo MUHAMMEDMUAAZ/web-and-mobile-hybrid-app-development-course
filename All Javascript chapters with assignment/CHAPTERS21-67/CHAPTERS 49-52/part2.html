@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="w-25 mx-auto">
+    <h1 class="text-primary">Question 2</h1>
+<p id="para" class="border border-dark p-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi quisquam laborum <a href="JavaScript:void(0):" onclick="read()">read more</a> </p>
+</div> 
+<script>
+  var para="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi quisquam laborum repellat beatae velit at porro voluptatem cum, molestiae nostrum deserunt. Velit vero veritatis maiores, debitis mollitia natus molestias!";
+function read(){
+    var exp=document.getElementById('para');
+    exp.innerHTML=para;
+}
+</script>
+</body>
+</html>

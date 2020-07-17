@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label><br>
+        <input type="text" id="first-name" />
+        <br>
+        <label for="last-name">Last Name</label><br>
+        <input type="text" id="last-name" />
+        <br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p> <br>
+        <p class="render" id="lastName">Last Name: Bank</p> <br>
+        <p class="render"> Email : alexbank@example.com</p> <br>
+        <p class="render"> Country : Pakistan </p> <br>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div>
+      <script>
+          //i
+var element=document.getElementById('main-content');
+
+//ii
+var maincontent=document.getElementById('main-content');
+console.log(maincontent.childNodes);
+
+//iii
+var render=document.getElementsByClassName('render');
+for(var i=0;i < render.length;i++){
+    document.write(render[i].innerHTML+"<br>");
+}
+
+//iv
+var firstname=document.getElementById('first-name');
+firstname.value="Hello";
+
+
+//v
+var lastname=document.getElementById('last-name');
+var email= document.getElementById('email');
+lastname.value="World";
+email.value="assignment@saylani.js";
+
+      </script>  
+</body>
+</html>

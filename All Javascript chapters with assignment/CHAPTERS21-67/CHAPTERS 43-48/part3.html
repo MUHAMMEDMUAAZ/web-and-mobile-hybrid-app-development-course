@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="panel panel-primary">
+        <div class="pull-right">
+          <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+              <i class="glyphicon glyphicon-filter"></i>
+          </span>
+        </div>
+        
+        <table class="table table-hover" id="dev-table">
+         <thead>
+          <tr>
+              <th>Index</th>
+              <th>Name</th>
+               <th>Class</th>
+            
+         </thead>
+        <tbody>
+          <tr>
+              <td >0</td>
+              <td>John Doe 1</td>
+              <td>10</td>
+              <td><input type="button" value="Delete" onclick="deleteRow()"></input> 
+          </tr>
+          <tr>
+            <td >1</td>
+            <td>John Doe 2</td>
+            <td>9</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>John Doe 3</td>
+            <td>8</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>3</td>
+            <td>John Doe 4</td>
+            <td>7</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>4</td>
+            <td>John Doe 5</td>
+            <td>6</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>4</td>
+            <td>John Doe 6</td>
+            <td>5</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>5</td>
+            <td>John Doe 1</td>
+            <td>4</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>6</td>
+            <td>John Doe 7</td>
+            <td>3</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>7</td>
+            <td>John Doe 8</td>
+            <td>2</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>John Doe 9</td>
+            <td>1</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr> 
+          <tr>
+            <td>9</td>
+            <td>John Doe 10</td>
+            <td>0</td>
+            <td><input type="button" value="Delete" onclick="deleteRow()"></input>
+          </tr>  
+          <td >
+            
+       </td>  
+         </tbody>
+        </table>
+       </div>  
+       <script>
+          
+           
+           function deleteRow(){
+      // event.target will be the input element.
+      var td = event.target.parentNode; 
+      var tr = td.parentNode; // the row to be removed
+      tr.parentNode.removeChild(tr);
+}
+
+       </script> 
+</body>
+</html>

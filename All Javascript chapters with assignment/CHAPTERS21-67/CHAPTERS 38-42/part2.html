@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Input Year: <input type="text" id = "year"/> 
+      
+    <input type="button" id="button" onClick="isLeapYear()"
+            value="Check Leap Year"> 
+      
+    <p id="abc"></p> 
+      
+    
+    <script> 
+        function isLeapYear() { 
+            var year= document.getElementById("year").value; 
+              
+            document.getElementById("abc").innerHTML  
+                = (year % 100 === 0) ? (year % 400 === 0) 
+                                     : (year % 4 === 0); 
+        } 
+    </script> 
+</body>
+</html>

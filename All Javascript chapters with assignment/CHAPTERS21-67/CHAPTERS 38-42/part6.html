@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var word="a quick brown fox jumps over a lazy dog";
+function dltvowel(dlt){
+    for(var i=0; i < dlt.length; i++){
+        if(dlt[i]==="a" || dlt[i]==="e" || dlt[i]==="i" || dlt[i]==="o" || dlt[i]==="u"){
+            dlt=dlt.slice(0,i) + dlt.slice(i+1,dlt.length);
+        }
+    }
+    document.write(dlt)
+}
+dltvowel(word)
+    </script>
+</body>
+</html>

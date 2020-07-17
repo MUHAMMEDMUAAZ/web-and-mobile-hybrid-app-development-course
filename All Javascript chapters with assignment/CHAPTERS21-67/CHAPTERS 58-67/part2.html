@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label><br>
+        <input type="text" id="first-name" />
+        <br>
+        <label for="last-name">Last Name</label><br>
+        <input type="text" id="last-name" />
+        <br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p> <br>
+        <p class="render" id="lastName">Last Name: Bank</p> <br>
+        <p class="render"> Email : alexbank@example.com</p> <br>
+        <p class="render"> Country : Pakistan </p> <br>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div>
+    <script>
+        //i
+var formContent=document.getElementById('form-content');
+console.log(formContent.nodeType);
+
+//ii
+var lastName=document.getElementById('lastName');
+console.log("Node type of Element : "+lastName.nodeType);
+console.log(lastName.childNodes);
+console.log("Node type of child element :"+lastName.childNodes[0].nodeType);
+
+//iii
+var lastName=document.getElementById('lastName');
+lastName.innerHTML="Last Name : Updated";
+
+//iv
+var main=document.getElementById('main-content');
+console.log("First Child : "+main.firstChild);
+console.log("Last Child : "+main.lastChild);
+
+//v
+var lastName=document.getElementById('lastName');
+console.log("Next Sibling : "+lastName.nextSibling);
+console.log("Previus Sibling : "+lastName.previousSibling);
+
+//vi
+var email=document.getElementById('email');
+console.log("nodetype : "+email.nodeType);
+console.log("parent Node : "+email.parentNode);
+    </script>
+</body>
+</html>

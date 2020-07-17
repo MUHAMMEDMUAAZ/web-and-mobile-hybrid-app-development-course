@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="before" src="images/1.jpg" onmouseover="swap()" onmouseout="swapBack()" alt="" > 
+    <script>
+        function swap(){
+    document.getElementById('before').src="images/1.jpg";
+}
+function swapBack(){
+    document.getElementById('before').src="images/2.jpg";
+}
+    </script>
+</body>
+</html>

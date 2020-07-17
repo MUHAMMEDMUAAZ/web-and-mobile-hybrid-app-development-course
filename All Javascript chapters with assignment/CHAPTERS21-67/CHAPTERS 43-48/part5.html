@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dec()">&lt; </button>&nbsp;<span id="counter"> 0 </span>&nbsp;<button onclick="inc()">&gt;</button> 
+    <script>
+        function inc(){
+            var val=document.getElementById('counter');
+            value=Number(val.innerHTML)
+            val.innerHTML=value+1
+        }
+        function dec(){
+            var val=document.getElementById('counter');
+            value=Number(val.innerHTML)
+            val.innerHTML=value-1
+        }
+    </script>
+</body>
+</html>
